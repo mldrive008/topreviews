@@ -13,3 +13,20 @@
     --text-primary: #f1f5f9;
   }
 }
+.post-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+}
+
+.post-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+@media (max-width: 768px) {
+  .container { padding: 0 1rem; }
+  .post-grid { grid-template-columns: 1fr; }
+  h1 { font-size: 2rem; }
+}
